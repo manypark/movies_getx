@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:movies_getx/src/widgets/card_swiper.dart';
 
+import '../widgets/movie_slider.dart';
+
 class HomePages extends StatelessWidget {
 
   const HomePages({Key? key}) : super(key: key);
@@ -29,6 +31,9 @@ class HomePages extends StatelessWidget {
 
             //Espacio entre cartelera y populares
             const SizedBox(height: 30.0,),
+
+            //Infinite scroll de peliculas
+            const MovieSlider(),            
           ]
         ),
       )
